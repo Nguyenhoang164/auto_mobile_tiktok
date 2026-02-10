@@ -1,0 +1,6 @@
+* Cài đặt kết nối adb (kết nối giữa OS và Android):
+- link tải: https://developer.android.com/tools/releases/platform-tools?hl=vi
+- mở màn hình cmd, nhập: adb devices
+- VD test thành công: 
+"List of devices attached
+ce051605438c8e0a02      device" -> kết nối thành công và sẵn sàng chạy

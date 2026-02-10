@@ -1,0 +1,29 @@
+- Bước 1: Tạo Project trên Google Cloud
++ Truy cập : https://console.cloud.google.com/welcome?project=level-hallway-402406
++ Nhấn vào nút Select a project (góc trên bên trái) > chọn New Project.
++ Đặt tên cho dự án (ví dụ: TikTok-Auto-Project) và nhấn Create.
+
+- Bước 2: Kích hoạt Google Drive API
++ Tại thanh tìm kiếm phía trên, gõ: "Google Drive API".
++ Chọn kết quả hiện ra và nhấn nút Enable (Bật).
++ Tại thanh tìm kiếm phía trên, gõ: "Google Sheets API".
++ Chọn kết quả hiện ra và nhấn nút Enable (Bật).
+
+- Bước 3: Tạo Service Account (Tài khoản dịch vụ)
++ Vào menu (ba dấu gạch ngang) > APIs & Services > Credentials.
++ Nhấn Create Credentials (ở phía trên) > Chọn Service Account.
++ Thông tin: Nhập tên (ví dụ: drive-miner) rồi nhấn Create and Continue.
++ Phân quyền (Role): Chọn Basic > Editor (để có quyền đọc/ghi file). 
++ Nhấn Continue rồi nhấn Done.
+
+- Bước 4: Tải file JSON (Chìa khóa quan trọng)
++ Tại bảng danh sách Service Accounts vừa hiện ra, nhấn vào email của tài khoản vừa tạo.
++ Chuyển sang tab Keys.
++ Nhấn Add Key > Create new key.
++ Chọn định dạng JSON và nhấn Create.
+-> Một file có đuôi .json sẽ tự động tải về máy. Đây chính là file cần đổi tên thành service_account_key.json và bỏ vào thư mục dự án.
+
+- Bước 5: Cấp quyền truy cập cho Service Account (Rất quan trọng)
++ Mở file JSON vừa tải về, tìm dòng "client_email" (nó có dạng xxxx@yyyy.iam.gserviceaccount.com).
++ Mở Google Drive (hoặc file Excel cụ thể muốn đào dữ liệu).
++ Nhấn nút Share (Chia sẻ) > Dán cái email robot đó vào > Cấp quyền Editor > Nhấn Send.

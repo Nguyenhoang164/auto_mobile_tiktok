@@ -1,0 +1,16 @@
+* Luồng chạy đào dữ liệu bài đăng dựa vào file Content đăng bài xlsx cập nhật hàng ngày
+- Truy cập drive nơi chứa file Content đăng bài, tải và đưa vào thư mục dự án
+- Tiến hành quét dựa vào trường mã sản phẩm cho toàn bộ danh mục, mục tiêu tìm các video có tên trùng khớp với mã sản phẩm
+- Với các video có trùng mã sản phẩm ở thư mục done, đánh dấu video của sản phẩm đó đã được đăng
+- Cấu trúc file sau khi tổng hợp:
++ Mã sản phẩm
++ Trạng Thái
++ Vị trí: nơi video chứa trong thư mục
++ Tên file video: căn cứ tham chiếu để lấy video phù hợp
++ Link video: đường dẫn URL google drive để tải video
++ Danh mục: xác định video của sản phẩm đó được đưa cho máy nào thực hiện
++ Ngày: ngày tạo content đăng bài đó 
++ Tên sản phẩm
++ Link sản phẩm
++ Content: nội dung cần đăng bài
+- Tập hợp thông tin các máy chạy ở các desktop khác nhau với mỗi desktop đại diện cho máy liên kết

@@ -1,0 +1,4 @@
+* Cài đặt appium server : 
+- mở giao diện cmd
+- nhập mã npm i -g appium   
+- lệnh: appium - khởi chạy server appium
