@@ -16,8 +16,6 @@ Dự án này là một hệ thống kết hợp giữa Python (xử lý dữ li
 
 2. Luồng vận hành chi tiết (Workflow)
 
-Ngài có thể hình dung luồng hoạt động qua sơ đồ dưới đây:
-
     Giai đoạn 1 (Python): Chạy auto_process.py. Script này sẽ xác thực với Google Drive, quét các tệp tin cần thiết, sau đó "đào" (extract) dữ liệu thô và chuyển đổi chúng thành tệp tin cục bộ sẵn sàng cho việc chạy máy.
 
     Giai đoạn 2 (Dữ liệu trung gian): Dữ liệu sau khi xử lý thường được lưu vào thư mục mà app.js có quyền truy cập (ví dụ file .xlsx trong thư mục xlsx/ mà tôi thấy trong pack).
@@ -26,7 +24,7 @@ Ngài có thể hình dung luồng hoạt động qua sơ đồ dưới đây:
 
 3. Hướng dẫn cách chạy chi tiết cho người khác
 
-Để vận hành hệ thống này, người tiếp quản cần làm theo các bước sau:
+Để vận hành hệ thống này, cần làm theo các bước sau:
 
 Bước 1: Thiết lập môi trường Python (cho auto_process.py)
 
