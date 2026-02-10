@@ -1,0 +1,33 @@
+* Luồng chạy thực thi cho một máy cụ thể
+- Mở app tiktok
+- Truy cập trang cá nhân (nút bên ngoài cùng phía bên phải cạnh dưới màn hình , dùng appium inspector để tìm chi tiết hơn)
+- Truy cập danh mục Tiktok Shop Creative Center
+- Chọn mục Create now ( Nếu xuất hiện cửa sổ popup thì tắt)
+- Thực hiện lấy danh sách sản phẩm cần đăng gồm mã sản phẩm tham chiếu đến video tương ứng trong file tổng hợp (nếu không có video với mã sản phẩm đó thì bỏ qua vì thiếu video đăng)
+- Trong mục tìm kiếm sản phẩm, có HAI TRƯỜNG HỢP XẢY RA:
++ sản phẩm gõ trên thanh tìm kiếm xuất hiện, thực hiện add bình thường
++ nếu không có sản phẩn đó, dựa vào link sản phẩm tham chiếu qua mã sản phẩm để truy cập vào sản phẩm tương ứng và add như trên
+- Ở trang nhập tên sản phẩm , mục tên sản phẩm lấy tham số tên sản phẩm điều chỉnh xuống < 30 kí tự tối đa
+- Ở mục chọn video lựa chọn video đã tải về ( cần lấy đúng tên video theo đúng mã sản phẩm)
+- lựa chọn next
+- Vào mục Add description lấy thông tin từ cột content lấy các thông tin hash tag: 
++ hashtag danh mục phòng ban ( đồ lót , thực phẩm, công nghệ,....)
++ hashtag trend 
+- Có 3 trường hợp xảy ra
++ nếu là bài viết đầu tiên trong ngày, chạy bình thường
++ nếu là bài viết thứ 2: + lựa chọn mục schedual time > optimize time đặt 30p
++ các bài viết còn lại time delay khi đăng từ 10 - 15p 
+- Trong Edit video , chọn Tint và đưa tên sản phẩm vào ô blank đó > điều chỉnh vị trí đặt dưới video tránh che sản phẩm trực tiếp
+- Sau khi thực hiện xong nhấn post > lấy tên video đó tìm kiếm trên drive, đưa video đó vào mục done và cập nhật đánh dấu trạng thái trong file log hoặc file exel tổng hợp
+- lặp lại cho đến khi hết video cần đăng
+----------------------------------------------------------------------------------------------------------
+*Cơ chế lướt vô hạn và thả like ( đăm bảo tài khoản luôn trong trạng thái hoạt động và tránh bị khóa khi dùng auto bot )
+- Truy cập thiết bị đang hoạt động
+- Kiểm tra số lượng bài đăng trong hàng chờ, nếu KHÔNG CÓ bài cằn đăng thực hiện các hoạt động dưới sau:
++ Tiến hành chạy lướt điện thoại giả lập 3 ngón (đảm bảo hoạt động tương tác như người lướt)
++ Sau mỗi 3 bài viết thả like 1 lần để tránh auto bot tiktok phát hiện ban tài khoản
+- Sau khi có bài viết mới cần đăng nằm trong hàng chờ, tiến hành ngừng quy trình chạy auto lướt sang đăng bài
+------------------------------------------------------------------------------------------
+** Lưu ý quan trọng **
+- Số lượng bài viểt cần đăng dựa vào số video đang trong hàng chờ của danh mục đó
+- Video cần phải đúng sản phẩm  

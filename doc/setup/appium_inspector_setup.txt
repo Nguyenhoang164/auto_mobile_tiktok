@@ -1,0 +1,16 @@
+* Hướng dẫn sử dụng Appium Inspector để tìm kiếm phần tử div trên màn hình điện thoại (Lưu ý khi chạy sẽ ngừng toàn bộ hệ thống do appium đang chạy luồng đơn nhánh)
+- link tải: https://github.com/appium/appium-inspector/releases
+- Thực hiện chạy appium màn hình cmd
+- Mở app Appium Inspector
+- Tại bên phải màn hình, mục JSON Representation tiến hành dán mã sau
+{
+  "platformName": "Android",
+  "appium:automationName": "UiAutomator2",
+  "appium:udid": "xxxxxxxxxxx", (mã thiết bị, sử dụng cmd nhập adb devices để lấy thông tin mã thiết bị)
+  "appium:deviceName": "Android_Device",
+  "appium:ensureWebviewsHavePages": true,
+  "appium:nativeWebScreenshot": true,
+  "appium:newCommandTimeout": 3600,
+  "appium:connectHardwareKeyboard": true
+}
+- Dùng con chỏ chuột đi tìm các phần tử lấy "resource-id" để truy cập vào phần tử
