@@ -1,9 +1,5 @@
 * Các hạng mục và đầu công việc cần thực hiện
-- Nghiên cứu các từ khóa và cách cài đặt chi tiết cho từng môi trường: 
-+ adb : https://developer.android.com/tools/adb?hl=vi
-+ appium server : https://viblo.asia/p/tim-hieu-ve-appium-va-cach-cai-dat-appium-QpmlegYrKrd
-+ appium inspector : https://anhtester.com/lesson/appium-java-su-dung-appium-inspector-de-tim-element-tren-mobile-app-native-flutter
-+ Google clound service : https://vietnix.vn/ket-noi-n8n-den-google-cloud-apis/?utm_source=ggads&utm_medium=pmax&p=&gad_source=1&gad_campaignid=23379656783&gclid=Cj0KCQiAy6vMBhDCARIsAK8rOgkMc0y2cMyFE2Q9di3ZKMAJ11wwJKxo1wj9TGcVMCjHPB5AaHO5SacaAlpBEALw_wcB
+
 a. Luồng truy cập vào shop tiktok
 - Từ màn hình chính Tiktok, truy cập vào trang cá nhân và thực hiện đăng bài theo luồng thực thi (tham khảo tài liệu workflow)
 - Cách phân chia tài nguyên bài đăng cho một máy cụ thể đang không có kiểm soát (tự nghiên cứu và đưa giải pháp)
