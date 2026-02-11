@@ -1,0 +1,12 @@
+* Các hạng mục và đầu công việc cần thực hiện
+- Nghiên cứu các từ khóa và cách cài đặt chi tiết cho từng môi trường: 
++ adb : https://developer.android.com/tools/adb?hl=vi
++ appium server : https://viblo.asia/p/tim-hieu-ve-appium-va-cach-cai-dat-appium-QpmlegYrKrd
++ appium inspector : https://anhtester.com/lesson/appium-java-su-dung-appium-inspector-de-tim-element-tren-mobile-app-native-flutter
+a. Luồng truy cập vào shop tiktok
+- Từ màn hình chính Tiktok, truy cập vào trang cá nhân và thực hiện đăng bài theo luồng thực thi (tham khảo tài liệu workflow)
+- Cách phân chia tài nguyên bài đăng cho một máy cụ thể đang không có kiểm soát (tự nghiên cứu và đưa giải pháp)
+
+b. Luồng thực thi trên máy client desktop
+- Xử lý đăng bài trên nhiều máy khác nhau (tham khảo tài liệu up_video_desktop.setup.txt)
+- Thực hiện kết nối với các máy

@@ -1,0 +1,5 @@
+* Các hạng mục đã hoàn thành (đã test và chạy thành công)
+- Lấy dữ liệu từ drive Content Đăng Bài.xlsx, link file tài nguyên (auto_processor.py)
+- Xử lý quét data video trong thư mục, link file tài nguyên quét https://drive.google.com/drive/folders/16Y9_6q3Ml0trazUmUfuneclMBQPjLWJ8 (auto_processor.py)
+- Xử lý chạy tuần tự trên điện thoại khi không có bài đăng (app.js)
+- Xử lý logic like và lướt bài đăng (app.js)
